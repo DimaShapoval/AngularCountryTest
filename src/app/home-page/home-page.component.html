@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="d-flex justify-content-center">
+    <div class="input-group rounded w-50">
+      <input type="search" [(ngModel)]="searchValue" class="form-control rounded" placeholder="Search country" />
+    </div>
+  </div>
+  <div class="row mt-2">
+    <div class="hero-unit col-md-4 col-6 text-center mt-2" *ngFor="let random of randomCountriesList">
+      <div class="widget-wrapper border d-flex flex-column justify-content-center">
+        <h4 style="cursor: pointer;" [routerLink]="'/country/' + random.countryCode">{{random.counties}}</h4>
+        <p>{{random.name}}</p>
+        <p class="mb-0">{{random.date | date}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="row row-cols-3">
+    <ng-container *ngIf="listOfCountries | async as list">
+      <div *ngFor="let country of list | searchCountry: searchValue" class="col p-4 text-center">
+        <a class="text-dark" [routerLink]="'/country/' + country.countryCode"> <i class="bi bi-flag"></i>
+          {{country.name}}</a>
+      </div>
+    </ng-container>
+  </div>
+</div>
