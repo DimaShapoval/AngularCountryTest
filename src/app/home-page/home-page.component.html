@@ -6,8 +6,8 @@
   </div>
   <div class="row mt-2">
     <div class="hero-unit col-md-4 col-6 text-center mt-2" *ngFor="let random of randomCountriesList">
-      <div class="widget-wrapper border d-flex flex-column justify-content-center">
-        <h4 style="cursor: pointer;" [routerLink]="'/country/' + random.countryCode">{{random.counties}}</h4>
+      <div style="cursor: pointer;" [routerLink]="'/country/' + random.countryCode" class="widget-wrapper border d-flex flex-column justify-content-center">
+        <h4>{{random.counties}}</h4>
         <p>{{random.name}}</p>
         <p class="mb-0">{{random.date | date}}</p>
       </div>
