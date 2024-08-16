@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
 
-##For launch the project
+## For launch the project
 
 ( If you use Angular at first run this command in terminal `npm install -g @angular/cli@17` )
 1. **Open terminal like Node.js promt or terminal in VScode** 
@@ -12,12 +12,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 5. **Run project: `npm start`**
 6. **Open link that terminal sent (usually it's `http://localhost:4200/`)**
 
-##Build project
+## Build project
 
 ( If you don't install packges run this command in terminal `npm install` or `npm i` )
 1. **In terminal run command `npm run build`**
 
-##Architecture
+## Architecture
 
 ### Overview
 
@@ -97,11 +97,11 @@ Finds and returns the name of a country based on ISO code.
 - **Returns**: `Promise<any>`
 - **Usage**: Call this method to take the name of a concrete country in CountryPage. It's created to displayed name of country bottom of header
 
-##Additional Libraries
+## Additional Libraries
 1. **Bootstrap**
 2. **ngx-env**
 
-##Configurated VScode
+## Configurated VScode
 
 1. **Check your `.eslintrc.json` and `.prettierrc` it's should be in project**
 2. **Download two extensions for VScode:**
@@ -112,5 +112,6 @@ Finds and returns the name of a country based on ISO code.
    - In json file might be `"editor.formatOnSave": true,
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }` ( If not, add it in your file ) 
+    }`
+( If not, add it in your file ) 
 5. **Format your code after changing use Ctrl+A -> Ctrl+K -> Ctrl+F**
