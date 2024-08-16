@@ -16,6 +16,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ( If you don't install packges run this command in terminal `npm install` or `npm i` )
 1. **In terminal run command `npm run build`**
+### Run build
+1. **In terminal run command `cd dist`**
+2. **Next step run this `ng serve`**
 
 ## Architecture
 
