@@ -48,7 +48,7 @@ export class ApiService {
     return this.randomList;
   }
 
-  async getCountryHolidayInfo(countryCode: string, year: number = 2024): Promise<CountryInfo[]> {
+  async getCountryHolidayInfo(countryCode: string, year: number = new Date().getFullYear()): Promise<CountryInfo[]> {
     return firstValueFrom(this.http.get<CountryInfo[]>(`${this.apiUrl}/api/v3/PublicHolidays/${year}/${countryCode}`));
   }
 
